@@ -1,0 +1,247 @@
+/* Introductory Banner Styling */
+#introductory_banner {
+
+    margin-top: 5vh;
+    margin-bottom: 8vh;
+    padding: 2vh;
+    background: url(https://cdn.pixabay.com/photo/2020/04/30/05/20/nature-5111414_960_720.jpg);
+    background-position: center;
+    height: 36vh;
+
+}
+
+#product_description {
+
+    float: inline-start;
+    background-color: #EAE1DF;
+    border-radius: 12px;
+    width: 48vh;
+    height: 24vh;
+    padding: 2vh;
+    margin-top: 4vh;
+    margin-left: 12%;
+    margin-bottom: 4vh;
+
+}
+
+/* End of Introductory Banner Styling */
+
+/* Demeter Features Styling */
+#features {
+
+    background-color: #EAE1DF;
+    border-radius: 12px;
+    float: right;
+    padding: 2vh;
+
+}
+
+#features_list li {
+
+    list-style-type: none;
+    padding-bottom: 2vh;
+
+}
+
+#features_list li:before {
+
+    content: 'eco';
+    font-family: 'Material Icons';
+    color: #C17667;
+    font-size: 16px;
+    padding-right: 1vh;
+
+}
+/* End of Demeter Features Styling */
+
+/* Pot Style Showcase */
+#style_showcase {
+
+    background-color: #EAE1DF;
+    border-radius: 12px;
+    width: 75%;
+    height: 40vh;
+    padding: 2vh;
+    margin: auto;
+    margin-bottom: 8vh;
+
+}
+
+#card_container {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 32vh;
+
+}
+
+.card {
+
+    position: relative;
+    margin: 1%;
+    width: 24vh;
+    height: 16vh;
+    background-color: #C17667;
+    border-radius: 20px;
+    transition: 0.3s ease;
+    cursor:pointer;
+
+}
+
+.card:hover {
+
+    height: 20vh;
+
+}
+
+.card_image {
+
+    position: absolute;
+    left: 50%;
+    top: -25%;
+    transform: translateX(-50%);
+    width: 14vh;
+    height: 14vh;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+
+}
+
+.card_image img {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*Stops stretching of image*/
+
+}
+
+.card:hover .card_image {
+
+    width: 20vh;
+    height: 20vh;
+
+}
+
+.card .card_description {
+
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: flex-end;
+}
+
+.card .card_description .details {
+
+    padding: 3vh;
+    width: 100%;
+    transition: 0.3s;
+    transform: translateY(3vh);
+
+}
+
+.card:hover .card_description .details {
+
+    transform: translateY(3.5vh);
+    font-size: 108%;
+    font-weight: bold;
+
+}
+
+.card_description h4 span {
+
+    color: white;
+    opacity: 0.8;
+    padding-left: 3vh;
+
+}
+
+/* End of Pot Style Showcase */
+
+/* Newsletter Sign up Styling */
+#newsletter_signup
+{
+
+    background-color: #EAE1DF;
+    border-radius: 12px;
+    padding: 2vh;
+    width: 75%;
+    height: 24vh;
+    display: block; 
+    margin: 0 auto;
+    justify-content: center;
+
+}
+
+#newsletter_signup button {
+
+    color: #EAE1DF;
+    background-color: #C17667;
+    border-radius: 12px;
+    width: 50%;
+    height: 4vh;
+    padding: 2px;
+    display: block; 
+    margin: auto;
+    margin-top: 2vh;
+    border: #C17667;
+    transition: .3s ease;
+    transition-property: opacity;
+
+}
+
+#newsletter_signup button:hover {
+
+    opacity: 0.8;
+    cursor: pointer;
+
+}
+
+#newsletter_signup div { /* Using div here bc otherwise the placeholder will be centered in input rather than input being centered */
+    text-align: center;
+}
+
+#email_prompt {
+
+    margin-left: 21vh;
+
+}
+
+#email_entry {
+
+    width: 50%;
+    height: 4vh;
+    margin: auto;
+    padding: 1vh;
+    font-size: 16px;
+    border-radius: 12px;
+    border: white;
+
+}
+
+/* Thank you popup*/
+#thankYou {
+
+    background-color: #EAE1DF;
+    border-radius: 12px;
+    padding: 2vh;
+    text-align: center;
+    width: 75%;
+    margin: 10%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity:0;
+
+}
+
+#thankYou.open{
+    opacity: 1;
+}

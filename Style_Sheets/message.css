@@ -1,0 +1,63 @@
+h2 {
+
+    opacity: 0.5;
+    font-size: 20vh;
+
+}
+
+main {
+
+    padding: 4vh;
+
+}
+
+/* Error msg stryling */
+#message {
+
+    text-align: center;
+    margin-top: 8vh;
+
+}
+
+#message h2 {
+
+    font-size: 12vh;
+    color: #c17667;
+    border-radius: 12px;
+
+}
+
+#message h3 {
+
+    font-size: 100%;
+
+}
+
+#message button {
+
+    margin-top: 2vh;
+    color: #eae1df;
+    background-color: #c17667;
+    border-radius: 12px;
+    height: 8vh;
+    width: 24vh;
+    transition: 0.3s ease;
+    border: #c17667;
+    font-size: 2vh;
+
+}
+
+#message button:hover {
+
+    opacity: 0.8;
+
+}
+/* End of Error msg stryling */
+
+footer {
+
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+
+}

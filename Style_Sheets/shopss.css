@@ -1,0 +1,135 @@
+h2 {
+
+    color: #C17667;
+    margin-bottom: 1vh;
+    font-size: 2.5vh;
+
+}
+
+/* Page title banner styling*/
+#page_title_banner {
+
+    margin-top: 5vh;
+    background-image: url(https://images.pexels.com/photos/9907664/pexels-photo-9907664.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center;
+    background-size: cover;
+    height: 36vh;
+    padding: 2vh;
+}
+
+#page_title_banner article {
+
+    background-color: #C17667;
+    width: 60vh;
+    height: 8vh;
+    margin: auto;
+    border-radius: 12px;
+    text-align: center;
+    padding: 2vh;
+    margin-top: 12vh;
+
+}
+
+#page_title_banner h1 {
+
+    font-size: 6vh;
+    color: #EAE1DF;
+
+}
+
+/* End of Page title banner styling*/
+
+/*Product Styling*/
+.products{
+
+    padding: 4vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+}
+
+.card {
+
+    width: fit-content;
+    height: 40vh;
+    padding: 2vh;
+    border-radius: 12px;
+    transition: 1s ease;
+    margin: 1vh;
+
+}
+
+.card img{
+
+    height: 250px;
+    width: 250px;
+    border-radius: 12px;
+
+}
+
+.product_description {
+
+    padding: 0.5vh;
+    opacity: 0.8;
+
+}
+
+.product_description button {
+
+    background-color: #C17667;
+    border: #C17667;
+    border-radius: 8px;
+    width: 12vh;
+    height: 4vh;
+    color: aliceblue;
+    transition: 0.3s ease;
+    transition-property: opacity;
+    margin-top: 1em;
+    cursor: pointer;
+
+}
+
+.product_description button:hover {
+
+    opacity: 0.8;
+
+}
+
+.title {
+
+    font-weight: bold;
+
+}
+
+.price {
+
+    color: #C17667;
+
+}
+
+/*Product comparison table*/
+#comparisonTable {
+    background-color: #EAE1DF;
+    margin: 0 10% 4vh 10%;
+    padding: 2vh;
+    border-radius: 12px;
+}
+
+table {
+    width: 60%;
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 2vh;
+    margin: auto;
+}
+
+table th {
+    background-color: #C17667;
+    color: white;
+}
+
+table th, tr, td {
+    border: 2px solid white;
+    text-align: left;
+    padding: 10px;
+}

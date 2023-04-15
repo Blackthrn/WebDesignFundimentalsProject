@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!--Styling-->
+    <link rel="stylesheet" href="Style_Sheets/SupportSS.css">
+    <link rel="stylesheet" href="Style_Sheets/universal_styling.css">
+    <style>
+
+        #submit {
+            background-color: #C17667;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+            border: none;
+            padding: 1vh;
+            border-radius: 8px;
+            transition: .3s ease;
+            margin-top: 2vh;
+            width: fit-content;
+            float: right;
+        }
+
+        #submit:hover {
+            opacity: 0.8;
+        }
+
+    </style>
+
+    <!--Meta Data-->
+    <link rel="icon" href="Resources/favicon.ico"/>
+    <title id="title" >Support | Demeter</title>
+    <meta name="description" content="Get help if you are having issues with your Demeter pot">
+    <meta name="keywords" content="Troubleshooting, Customer service, Product support, Maintenance tips, FAQ">
+    <meta charset="utf-8">
+
+    <!--Importing Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Pridi&family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav id="top_navigation_bar">
+
+            <h1 class="brand">Demeter</h1>
+        
+            <ul id="top_navigation_links">
+
+                <li> <a href="index.html">Home</a> </li>
+                <li> <a href="shop.html">Shop</a> </li>
+                <li> <a href="support.html" style="background-color: #3B5249; padding: 0.5em;">Support</a> </li>
+                <li> <a href="about.html">About Us</a> </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section id="page_title_banner">
+
+            <article>
+                <h1>Support</h1>
+            </article>
+
+        </section>
+
+        <section id="faq">
+
+            <h2>Check out our FAQs</h2>
+            <h3>Our most popular FAQs</h3>
+
+            <ol>
+
+                <li><a href="404.html">How can I connect my Demeter to the app?</a></li>
+                <li><a href="404.html">Why does my Demeter not turn on it's light/water my plant?</a></li>
+                <li><a href="404.html">Why can't I log into my account on the app?</a></li>
+                <li><a href="404.html">What types of plants are best suited for self-sustaining pots?</a></li>
+                <li><a href="404.html">I don't think the app data is correct. How can I recallibrate it?</a></li>
+
+            </ol>
+            <br>
+            <h3>Can't find what you are looking for? Check out our <a href="404.html">full list of FAQs</a>.</h3>
+
+        </section>
+
+        <section id="contact_us">
+
+            <h2>Need more Assistance? Contact Us</h2>
+            <form action="submission.html" id="task" method="get">
+                <label>Full Name:<span>*</span></label>
+                <input name="fullName" type="text" placeholder="John Doe" required><br><br>
+
+                <label>E-Mail:<span>*</span></label>
+                <input name="eMail" type="email" placeholder="johndoe@email.com" required><br><br>
+
+                <label>Phone Number:</label>
+                <input name="phoneNumber" type="tel" placeholder="123-1234-1234"><br><br>
+
+                <label>Issue Type:<span>*</span></label>
+                <ul class="issueOptions">
+                    <li><input type="radio" name="issue" value="connectionToInternet"><label style="float: right; margin-right: 1vw;">Connection to Internet</label><br></li>
+                    <li><input type="radio" name="issue" value="connectionToApp"><label style="float: right; margin-right: 1vw;">Connection to App</label><br></li>
+                    <li><input type="radio" name="issue" value="problemsWithOrder"><label style="float: right; margin-right: 1vw;">Problems with Order</label><br></li>
+                </ul>
+
+                <label>Details about your problem:<span>*</span></label>
+                <textarea name="messageDetails" cols="100" rows="6" placeholder="Enter any details here" required ></textarea>
+
+                <button type="submit" id="submit" value="Submit">Submit</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <section id="navigation_and_info">
+
+            <!--Website Navigation Links-->
+            <article id="nav_links">
+
+                <ul>
+
+                    <li> <a href="index.html">Home</a> </li>
+                    <li> <a href="shop.html">Shop</a> </li>
+                    <li> <a href="support.html" style="background-color: #3B5249;">Support</a> </li>
+                    <li> <a href="About.html">About Us</a> </li>
+
+                </ul>
+
+            </article>
+
+            <!--Social Media Links-->
+            <article id="socials">
+
+                <ul>
+
+                    <li> <button class="social_links" onclick="location.href='https://www.instagram.com/'" type="button"><img src="Resources/instagram.png" alt="Instagram Logo"></button> </li>
+                    <li> <button class="social_links" onclick="location.href='https://www.youtube.com/'" type="button"><img src="Resources/youtube.png" alt="Youtube Logo"></button> </li>
+                    <li> <button class="social_links" onclick="location.href='https://www.facebook.com/'" type="button"><img src="Resources/facebook.png" alt="Facebook Logo"></button> </li>
+
+                </ul>
+
+            </article>
+
+            <!--Company Address-->
+            <article>
+
+                <address>
+                    Demeter HQ,<br>
+                    Abbyquater North,<br>
+                    Sligo,<br>
+                    Co. Sligo<br>
+                    ABC 1234
+                </address>
+
+            </article>
+
+        </section>
+
+        <!--Logo and disclamer-->
+        <article style="text-align: center;">
+            <h1 class="brand">Demeter</h1>
+            <h3 style="color: white; font-size: 12px; padding: 0%;">Site Design &copy; 2023</h3>
+            <h3 style="color: white; font-size: 12px; padding: 0%;">This is a college project</h3>
+        </article>
+
+    </footer>
+
+</body>
+
+</html>
